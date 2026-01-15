@@ -1,0 +1,195 @@
+/* Hero Section - Exact Design Match */
+.hero-section {
+  padding-top: 120px; /* Account for fixed header */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-green);
+  position: relative;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+}
+
+/* Left side - Natural healing elements image */
+.hero-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-image-container {
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+   opacity: 0;
+  transform: translateX(-100px); /* start off to the left */
+  animation: slideIn 1s ease-out forwards;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* final position */
+  }
+}
+
+/* Right side - Text content and CTA */
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-left: 40px;
+}
+
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 500px;
+}
+
+.hero-title {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1.27;
+  color: var(--primary-gold);
+  margin: 0;
+  text-align: left;
+  transition: transform 0.4s ease; /* smooth animation */
+  display: inline-block; /* important so transform applies properly */
+}
+
+.hero-title:hover {
+  transform: rotate(-5deg) scale(1.05); /* tilt & zoom a little */
+  text-shadow: 0 5px 15px rgba(229, 200, 107, 0.4); /* optional glowing */
+}
+.hero-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.448;
+  color: var(--primary-gold);
+  margin: 0;
+  text-align: left;
+  opacity: 0.9;
+}
+
+.hero-cta-btn {
+  background: transparent;
+  border: 1px solid var(--primary-gold);
+  border-radius: 40px;
+  color: var(--primary-gold);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.451;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+.hero-cta-btn:hover {
+  background: var(--primary-gold);
+  color: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(229, 200, 107, 0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+  }
+  
+  .hero-right {
+    padding-left: 0;
+  }
+  
+  .hero-text-content {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-description {
+    font-size: 20px;
+  }
+  
+  .hero-cta-btn {
+    align-self: center;
+  }
+  
+  .hero-image-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+  
+  .hero-content {
+    gap: 40px;
+  }
+  
+  .hero-title {
+    font-size: 40px;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+  }
+  
+  .hero-cta-btn {
+    font-size: 24px;
+    padding: 12px 30px;
+  }
+  
+  .hero-image-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  
+  .hero-description {
+    font-size: 16px;
+  }
+  
+  .hero-cta-btn {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+  
+  .hero-image-container {
+    height: 250px;
+  }
+}

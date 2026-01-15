@@ -1,0 +1,14 @@
+.ai-form {
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2563eb; /* blue-600 */
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

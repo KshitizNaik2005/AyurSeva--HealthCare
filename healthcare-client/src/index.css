@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karma', serif;
+  background-color: #181D18;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Font families from Figma */
+.font-inspiration {
+  font-family: 'Inspiration', cursive;
+}
+
+.font-kaisei {
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+.font-karma {
+  font-family: 'Karma', serif;
+}
+
+.font-kaushan {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.font-kite {
+  font-family: 'Kite One', sans-serif;
+}
+
+/* Color variables from Figma */
+:root {
+  --primary-gold: #E5C86B;
+  --dark-green: #181D18;
+  --medium-green: #364636;
+  --white: #FFFFFF;
+  --black: #000000;
+  --semi-transparent-dark: rgba(24, 29, 24, 0.82);
+  --semi-transparent-gold: rgba(229, 200, 107, 0.8);
+  --semi-transparent-gold-light: #364636;
+  --semi-transparent-white: rgba(255, 255, 255, 0.7);
+  --semi-transparent-green: rgba(54, 70, 54, 0.7);
+  --footer-dark: rgba(30, 30, 30, 0.8);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button styles */
+.btn {
+  border: 1px solid var(--primary-gold);
+  border-radius: 40px;
+  background: var(--semi-transparent-dark);
+  color: var(--primary-gold);
+  font-family: 'Kaushan Script', cursive;
+  font-size: 32px;
+  font-weight: 400;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section spacing */
+.section {
+  padding: 80px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+}
