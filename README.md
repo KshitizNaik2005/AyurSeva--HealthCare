@@ -57,12 +57,13 @@ AyurSeva provides an end-to-end digital solution by combining AI-based symptom a
 - Expansion into global wellness markets
 
 ## 👥 Team CodeSpades
-- Oshan Khati (Team Leader)
-- Arpita Soni
-- Kshitiz Naik
-- Ambrish Kumar Acharya
-- Dibya Shankar Sahu
-- Asmita Soni
+
+- [**Kshitiz Naik**](https://github.com/KshitizNaik2005) 
+- [**Oshan Khati**](https://github.com/Oshankhati)   
+- [**Arpita Soni**](https://github.com/Arpitasoni24)  
+- [**Asmita Soni**](https://github.com/AsmitaSoni) 
+- Ambrish Kumar Acharya  
+- Dibya Shankar Sahu  
 
 ## 🏆 Hackathon
 Smart India Hackathon (SIH) 2025  
